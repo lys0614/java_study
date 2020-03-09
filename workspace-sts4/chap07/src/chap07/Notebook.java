@@ -1,0 +1,26 @@
+package chap07;
+
+public class Notebook extends Computer4 implements Portable {
+
+	@Override
+	public void inMyBag() {
+		System.out.println("≥Î∆Æ∫œ¿∫ ∞°πÊø° ¿÷¥Ÿ");
+	}
+
+	public void turnOn() {
+		System.out.println("≥Î∆Æ∫œ ƒ‘");
+	}
+	
+	public void turnOff() {
+		System.out.println("≥Î∆Æ∫œ ≤˚");
+	}
+	public static void main(String[] args) {
+
+		Notebook n = new Notebook();
+		
+		n.turnOn();
+		n.turnOff();
+		n.inMyBag();
+	}
+
+}
